@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    animation: slidein 1s 1;
+}
+
+.container {
+    transition: 1s;
+}
+
+h1{
+    position: relative;
+    animation: animation 2s 1;
+    transition: 0.5s;
+   
+}
+.container h1:hover{
+    font-size: 50px;
+    cursor: pointer;
+    box-shadow:  -1em 0 .4em rgb(94, 94, 91);
+   
+
+}
+.container h1:active{
+    font-size: 120px;
+    position: relative;
+    top: 50px;
+    box-shadow:  -1em 0 .4em rgb(230, 145, 76);
+    color: darkblue;
+}
+.container .row .col-md-3{
+    cursor: pointer;
+    
+}
+
+
+.container .row .col-md-3 img{
+    transition: 0.5s;
+    
+   
+}
+
+
+.container .row .col-md-3 img:hover{
+ width: 250px;
+ height: 250px;
+ box-shadow: 10px 5px 5px lightgrey;
+ transform: scale(1.2);
+ 
+
+ 
+}
+
+.container .row .col-md-3 h3{
+position: relative;
+bottom: 150px;
+left: 30px;
+color: white;
+cursor: pointer;
+
+
+    
+
+}
+.container .row .col-md-3 button{
+    padding: 10px;
+    width: 200px;
+    border-radius: 25px;
+    border-style: none;
+    background-color: rgb(226, 115, 67);
+    position: relative;
+    bottom: 130px;
+    left: 20px;
+    color: white;
+    transition: 0.5s;
+    
+}
+
+
+.container .row .col-md-3 button:hover{
+ color: black;
+ background-color: chartreuse;
+ position: relative;
+ right: 80px;
+ transform: scale(1.2);
+}
+
+.container .row .col-md-3 button:active{
+    background-color: black;
+    color: gold;
+}
+
+
+@keyframes slidein{
+    from {
+       top: -200px;
+      }
+    
+      to {
+       top: 0px;
+      }
+}
+
+@keyframes animation{
+    from {
+       top: -200px;
+      }
+    
+      to {
+       top: 0px;
+      }
+}
